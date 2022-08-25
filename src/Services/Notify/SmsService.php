@@ -1,6 +1,6 @@
 <?php
 
-namespace Kraify\Fastdev\Services;
+namespace Kraify\Fastdev\Services\Notify;
 
 use GuzzleHttp\Client;
 use Illuminate\Support\Arr;
@@ -21,7 +21,7 @@ class SmsService
 
     private function request ( $uri, array $fields = [] ) {
         $client = new Client( [
-            'base_uri' => self::URl,
+            'base_uri' => $this->url,
         ] );
 
         $fields[ 'api_id' ] = $this->api_key;
