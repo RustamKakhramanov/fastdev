@@ -1,7 +1,7 @@
 {
     "name": "kraify/fastdev",
     "description": "Traits and helpers for based functonality",
-    "type": "composer-plugin",
+    "type": "library",
     "autoload": {
         "psr-4": {
             "Kraify\\Fastdev\\": "src/"

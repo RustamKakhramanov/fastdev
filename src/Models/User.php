@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Models;
+namespace Kraify\Fastdev\Models;
 
 // use Illuminate\Contracts\Auth\MustVerifyEmail;
 use App\Traits\ModelHasPhone;
