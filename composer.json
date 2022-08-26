@@ -27,12 +27,8 @@
         "staudenmeir/eloquent-has-many-deep": "^1.15"
     },
     "scripts": {
-        "post-autoload-dump": [
-            "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
-            "@php  artisan vendor:publish --provider=Kraify\\Fastdev\\FastDevServiceProvider"
-        ],
-        "post-update-cmd": [
-            "@php artisan vendor:publish --tag=laravel-assets --ansi --force"
+        "post-package-install": [
+            "@php artisan  kraify:install"
         ]
     },
     "extra": {
