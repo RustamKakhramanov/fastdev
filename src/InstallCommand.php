@@ -56,7 +56,13 @@ class InstallCommand extends Command
                     );
                 });
         });
+
+        $filesystem->copy(
+            $stubs_path.'/makefile',
+            base_path('/makefile')
+        );
     }
+    
 
     protected function registerRoutes()
     {
