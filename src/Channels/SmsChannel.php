@@ -2,7 +2,7 @@
 
 namespace Kraify\Fastdev\Channels;
 
-use Kraify\Fastdev\Services\SmsService;
+use Kraify\Fastdev\Services\Notify\SmsService;
 use Illuminate\Notifications\Notification;
 
 class SmsChannel

@@ -1,0 +1,17 @@
+Route::middleware(['guest'])->group(function () {
+    Route::group(['prefix' => 'auth'], function () {
+        Route::post('login', AuthenticationController::class);
+        Route::post('register', RegistrationController::class);
+        Route::post('refresh', RefreshTokenController::class);
+        Route::post('forgot', [ForgotPasswordController::class, 'sendResetLinkEmail']);
+        Route::post('reset', [ResetPasswordController::class, 'reset']);
+        Route::get('verification/{id}/{hash}', [VerificationController::class, 'verify'])->name('verification.verify');
+    });
+});
+
+Route::group(['prefix' => 'password'], function () {
+    Route::get('reset/code', 'PasswordController@getResetCode');
+    Route::post('reset/code/verify', 'PasswordController@verifyResetCode');
+    Route::post('reset', 'PasswordController@reset');
+    Route::post('change', 'PasswordController@change')->middleware(['auth']);
+});
