@@ -14,17 +14,17 @@
     ],
     "require": {
         "php": "^8.0.2",
-        "doctrine/dbal": "^3.4",
+        "doctrine/dbal": "^@dev",
         "guzzlehttp/guzzle": "^7.2",
-        "laravel/framework": ">9.19",
-        "laravel/passport": "^11.0",
-        "laravel/sanctum": "^3.0",
-        "laravel/telescope": "^4.9",
-        "laravel/tinker": "^2.7",
-        "laravel/ui": "^3.0",
-        "spatie/laravel-fractal": "^6.0",
-        "spatie/laravel-permission": "^5.5",
-        "staudenmeir/eloquent-has-many-deep": "^1.15"
+        "laravel/framework": "@dev",
+        "laravel/passport": "@dev",
+        "laravel/sanctum": "@dev",
+        "laravel/telescope": "@dev",
+        "laravel/tinker": "@dev",
+        "laravel/ui": "@dev",
+        "spatie/laravel-fractal": "@dev",
+        "spatie/laravel-permission": "@dev",
+        "staudenmeir/eloquent-has-many-deep": "@dev"
     },
     "extra": {
         "laravel": {
