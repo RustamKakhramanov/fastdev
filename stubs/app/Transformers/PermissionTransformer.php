@@ -1,6 +1,6 @@
 <?php
 
-namespace Kraify\Fastdev\Transformers;
+namespace App\Transformers;
 
 use Kraify\Fastdev\Permission;
 use League\Fractal\TransformerAbstract;

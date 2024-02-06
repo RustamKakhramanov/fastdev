@@ -1,6 +1,6 @@
 <?php
 
-namespace Kraify\Fastdev\Transformers;
+namespace App\Transformers;
 
 use League\Fractal\TransformerAbstract;
 use OpenApi\Annotations as OA;

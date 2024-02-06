@@ -1,6 +1,6 @@
 <?php
 
-namespace Kraify\Fastdev\Transformers;
+namespace App\Transformers;
 
 use Exception;
 use App\Models\User;

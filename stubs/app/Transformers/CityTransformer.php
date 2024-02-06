@@ -1,6 +1,6 @@
 <?php
 
-namespace Kraify\Fastdev\Transformers;
+namespace App\Transformers;
 
 use Kraify\Fastdev\Models\Location\City;
 use League\Fractal\TransformerAbstract;
