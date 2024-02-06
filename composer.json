@@ -19,7 +19,9 @@
         "laravel/framework": "@dev",
         "laravel/passport": "^11.10",
         "laravel/sanctum": "^3.0",
-        "laravel/telescope": "^4.17"
+        "laravel/telescope": "^4.17",
+        "spatie/laravel-permission": "^6.3",
+        "staudenmeir/eloquent-has-many-deep": "^1.7"
     },
     "extra": {
         "laravel": {
